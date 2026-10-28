@@ -1,0 +1,8 @@
+NAME            IMAGE                                COMMAND                  SERVICE         CREATED          STATUS                    PORTS
+datanode1       apache/hadoop:3.3.6                  "/usr/local/bin/dumb…"   datanode1       2 hours ago      Up 10 minutes (healthy)   
+datanode2       apache/hadoop:3.3.6                  "/usr/local/bin/dumb…"   datanode2       2 hours ago      Up 10 minutes (healthy)   
+namenode        apache/hadoop:3.3.6                  "/usr/local/bin/dumb…"   namenode        2 hours ago      Up 10 minutes (healthy)   0.0.0.0:9000->9000/tcp, [::]:9000->9000/tcp, 0.0.0.0:9870->9870/tcp, [::]:9870->9870/tcp
+spark-client    bigdata-diemthi-spark-client:3.5.9   "/opt/entrypoint.sh …"   spark-client    3 minutes ago    Up 27 seconds (healthy)   
+spark-master    bigdata-diemthi-spark:3.5.9          "/opt/entrypoint.sh …"   spark-master    40 seconds ago   Up 38 seconds (healthy)   0.0.0.0:7077->7077/tcp, [::]:7077->7077/tcp, 0.0.0.0:8080->8080/tcp, [::]:8080->8080/tcp
+spark-worker1   bigdata-diemthi-spark:3.5.9          "/opt/entrypoint.sh …"   spark-worker1   3 minutes ago    Up 32 seconds (healthy)   
+spark-worker2   bigdata-diemthi-spark:3.5.9          "/opt/entrypoint.sh …"   spark-worker2   3 minutes ago    Up 33 seconds (healthy)   

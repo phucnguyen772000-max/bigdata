@@ -1,0 +1,62 @@
+# Environment variables and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Raw/large datasets (keep only the directory marker)
+data/raw/*
+!data/raw/.gitkeep
+*.csv.gz
+*.parquet
+
+# Python environments and caches
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+
+# Runtime logs, temporary files and generated state
+*.log
+*.tmp
+*.swp
+*.pid
+logs/
+airflow/logs/
+airflow/**/logs/
+checkpoints/
+**/checkpoints/
+spark-warehouse/
+metastore_db/
+derby.log
+.cache/
+
+# Local Docker/HDFS/PostgreSQL/Kafka volume folders
+volumes/
+docker-data/
+hdfs-data/
+namenode-data/
+datanode*-data/
+kafka-data/
+postgres-data/
+airflow-db/
+
+# Backups and editor/OS metadata
+*.bak
+*.backup
+*.orig
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

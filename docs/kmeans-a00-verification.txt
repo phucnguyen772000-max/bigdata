@@ -1,0 +1,86 @@
+26/10/07 09:53:43 INFO SparkContext: Running Spark version 3.5.9
+26/10/07 09:53:43 INFO SparkContext: OS info Linux, 6.18.33.2-microsoft-standard-WSL2, amd64
+26/10/07 09:53:43 INFO SparkContext: Java version 17.0.19
+26/10/07 09:53:44 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+26/10/07 09:53:44 INFO ResourceUtils: ==============================================================
+26/10/07 09:53:44 INFO ResourceUtils: No custom resources configured for spark.driver.
+26/10/07 09:53:44 INFO ResourceUtils: ==============================================================
+26/10/07 09:53:44 INFO SparkContext: Submitted application: Verify-KMeans-A00
+26/10/07 09:53:44 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+26/10/07 09:53:44 INFO ResourceProfile: Limiting resource is cpu
+26/10/07 09:53:44 INFO ResourceProfileManager: Added ResourceProfile id: 0
+26/10/07 09:53:44 INFO SecurityManager: Changing view acls to: spark
+26/10/07 09:53:44 INFO SecurityManager: Changing modify acls to: spark
+26/10/07 09:53:44 INFO SecurityManager: Changing view acls groups to: 
+26/10/07 09:53:44 INFO SecurityManager: Changing modify acls groups to: 
+26/10/07 09:53:44 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: spark; groups with view permissions: EMPTY; users with modify permissions: spark; groups with modify permissions: EMPTY
+26/10/07 09:53:44 INFO Utils: Successfully started service 'sparkDriver' on port 43135.
+26/10/07 09:53:44 INFO SparkEnv: Registering MapOutputTracker
+26/10/07 09:53:44 INFO SparkEnv: Registering BlockManagerMaster
+26/10/07 09:53:45 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+26/10/07 09:53:45 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+26/10/07 09:53:45 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+26/10/07 09:53:45 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-e67ac99c-c720-4e3a-ac73-64fceec5034f
+26/10/07 09:53:45 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+26/10/07 09:53:45 INFO SparkEnv: Registering OutputCommitCoordinator
+26/10/07 09:53:45 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+26/10/07 09:53:45 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+26/10/07 09:53:45 INFO StandaloneAppClient$ClientEndpoint: Connecting to master spark://spark-master:7077...
+26/10/07 09:53:45 INFO TransportClientFactory: Successfully created connection to spark-master/172.18.0.2:7077 after 29 ms (0 ms spent in bootstraps)
+26/10/07 09:53:45 INFO StandaloneSchedulerBackend: Connected to Spark cluster with app ID app-20261007095345-0001
+26/10/07 09:53:45 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20261007095345-0001/0 on worker-20261007095124-172.18.0.3-41609 (172.18.0.3:41609) with 2 core(s)
+26/10/07 09:53:45 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 43849.
+26/10/07 09:53:45 INFO StandaloneSchedulerBackend: Granted executor ID app-20261007095345-0001/0 on hostPort 172.18.0.3:41609 with 2 core(s), 1024.0 MiB RAM
+26/10/07 09:53:45 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20261007095345-0001/1 on worker-20261007095124-172.18.0.4-40641 (172.18.0.4:40641) with 2 core(s)
+26/10/07 09:53:45 INFO NettyBlockTransferService: Server created on spark-client 0.0.0.0:43849
+26/10/07 09:53:45 INFO StandaloneSchedulerBackend: Granted executor ID app-20261007095345-0001/1 on hostPort 172.18.0.4:40641 with 2 core(s), 1024.0 MiB RAM
+26/10/07 09:53:45 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+26/10/07 09:53:45 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, spark-client, 43849, None)
+26/10/07 09:53:45 INFO BlockManagerMasterEndpoint: Registering block manager spark-client:43849 with 434.4 MiB RAM, BlockManagerId(driver, spark-client, 43849, None)
+26/10/07 09:53:45 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, spark-client, 43849, None)
+26/10/07 09:53:45 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, spark-client, 43849, None)
+26/10/07 09:53:46 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20261007095345-0001/0 is now RUNNING
+26/10/07 09:53:46 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20261007095345-0001/1 is now RUNNING
+26/10/07 09:53:46 INFO StandaloneSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+FEATURES_SCHEMA_BEGIN
+root
+ |-- SBD: string (nullable = true)
+ |-- Toan: double (nullable = true)
+ |-- VatLy: double (nullable = true)
+ |-- HoaHoc: double (nullable = true)
+ |-- A00: double (nullable = true)
+ |-- cluster: integer (nullable = true)
+ |-- Nam: integer (nullable = true)
+
+FEATURES_SCHEMA_END
+FEATURES_TOTAL_ROWS=141975
+FEATURES_BY_YEAR_CLUSTER
++----+-------+-----+
+|Nam |cluster|count|
++----+-------+-----+
+|2022|0      |17294|
+|2022|1      |29202|
+|2023|0      |18548|
+|2023|1      |28060|
+|2024|0      |20460|
+|2024|1      |28411|
++----+-------+-----+
+
+GOLD_CLUSTER_STATISTICS
++-------+---------+------+-------+--------+-------+----+
+|cluster|SoThiSinh|ToanTB|VatLyTB|HoaHocTB|A00TB  |Nam |
++-------+---------+------+-------+--------+-------+----+
+|0      |17294    |6.6867|5.3515 |5.2948  |17.333 |2022|
+|1      |29202    |8.0374|7.1266 |7.3322  |22.4961|2022|
+|0      |18548    |6.6093|5.1919 |5.7344  |17.5356|2023|
+|1      |28060    |7.8702|7.0978 |7.3214  |22.2894|2023|
+|0      |20460    |6.6922|5.0945 |5.368   |17.1547|2024|
+|1      |28411    |7.9744|7.2392 |7.2825  |22.4961|2024|
++-------+---------+------+-------+--------+-------+----+
+
+GOLD_STATS_ROWS=6
+MODEL_STAGE_COUNT=3
+MODEL_STAGE_0=VectorAssembler
+MODEL_STAGE_1=StandardScalerModel
+MODEL_STAGE_2=KMeansModel
+VERIFY_KMEANS_A00_SUCCESS

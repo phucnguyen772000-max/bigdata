@@ -1,0 +1,107 @@
+26/09/23 11:40:47 INFO SparkContext: Running Spark version 3.5.9
+26/09/23 11:40:47 INFO SparkContext: OS info Linux, 6.18.33.2-microsoft-standard-WSL2, amd64
+26/09/23 11:40:47 INFO SparkContext: Java version 17.0.19
+26/09/23 11:40:47 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+26/09/23 11:40:47 INFO ResourceUtils: ==============================================================
+26/09/23 11:40:47 INFO ResourceUtils: No custom resources configured for spark.driver.
+26/09/23 11:40:47 INFO ResourceUtils: ==============================================================
+26/09/23 11:40:47 INFO SparkContext: Submitted application: BigDataDiemThi-VerifySilver
+26/09/23 11:40:47 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+26/09/23 11:40:47 INFO ResourceProfile: Limiting resource is cpu
+26/09/23 11:40:47 INFO ResourceProfileManager: Added ResourceProfile id: 0
+26/09/23 11:40:47 INFO SecurityManager: Changing view acls to: spark
+26/09/23 11:40:47 INFO SecurityManager: Changing modify acls to: spark
+26/09/23 11:40:47 INFO SecurityManager: Changing view acls groups to: 
+26/09/23 11:40:47 INFO SecurityManager: Changing modify acls groups to: 
+26/09/23 11:40:47 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: spark; groups with view permissions: EMPTY; users with modify permissions: spark; groups with modify permissions: EMPTY
+26/09/23 11:40:48 INFO Utils: Successfully started service 'sparkDriver' on port 37281.
+26/09/23 11:40:48 INFO SparkEnv: Registering MapOutputTracker
+26/09/23 11:40:48 INFO SparkEnv: Registering BlockManagerMaster
+26/09/23 11:40:48 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+26/09/23 11:40:48 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+26/09/23 11:40:48 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+26/09/23 11:40:48 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-fb4d352f-619e-461b-9de5-4defee9bf596
+26/09/23 11:40:48 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+26/09/23 11:40:48 INFO SparkEnv: Registering OutputCommitCoordinator
+26/09/23 11:40:48 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+26/09/23 11:40:48 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+26/09/23 11:40:48 INFO StandaloneAppClient$ClientEndpoint: Connecting to master spark://spark-master:7077...
+26/09/23 11:40:48 INFO TransportClientFactory: Successfully created connection to spark-master/172.18.0.5:7077 after 20 ms (0 ms spent in bootstraps)
+26/09/23 11:40:48 INFO StandaloneSchedulerBackend: Connected to Spark cluster with app ID app-20260923114048-0004
+26/09/23 11:40:48 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20260923114048-0004/0 on worker-20260923110412-172.18.0.7-36751 (172.18.0.7:36751) with 2 core(s)
+26/09/23 11:40:48 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 34147.
+26/09/23 11:40:48 INFO NettyBlockTransferService: Server created on spark-client 0.0.0.0:34147
+26/09/23 11:40:48 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+26/09/23 11:40:48 INFO StandaloneSchedulerBackend: Granted executor ID app-20260923114048-0004/0 on hostPort 172.18.0.7:36751 with 2 core(s), 1024.0 MiB RAM
+26/09/23 11:40:48 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, spark-client, 34147, None)
+26/09/23 11:40:48 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20260923114048-0004/1 on worker-20260923110411-172.18.0.6-39255 (172.18.0.6:39255) with 2 core(s)
+26/09/23 11:40:48 INFO StandaloneSchedulerBackend: Granted executor ID app-20260923114048-0004/1 on hostPort 172.18.0.6:39255 with 2 core(s), 1024.0 MiB RAM
+26/09/23 11:40:48 INFO BlockManagerMasterEndpoint: Registering block manager spark-client:34147 with 434.4 MiB RAM, BlockManagerId(driver, spark-client, 34147, None)
+26/09/23 11:40:48 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, spark-client, 34147, None)
+26/09/23 11:40:48 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, spark-client, 34147, None)
+26/09/23 11:40:48 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20260923114048-0004/0 is now RUNNING
+26/09/23 11:40:48 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20260923114048-0004/1 is now RUNNING
+26/09/23 11:40:49 INFO StandaloneSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+SILVER_READBACK_SCHEMA_BEGIN
+root
+ |-- SBD: string (nullable = true)
+ |-- Tinh: integer (nullable = true)
+ |-- SBD_New: long (nullable = true)
+ |-- Toan: double (nullable = true)
+ |-- NguVan: double (nullable = true)
+ |-- VatLy: double (nullable = true)
+ |-- HoaHoc: double (nullable = true)
+ |-- SinhHoc: double (nullable = true)
+ |-- LichSu: double (nullable = true)
+ |-- DiaLy: double (nullable = true)
+ |-- GDCD: double (nullable = true)
+ |-- NgoaiNgu: double (nullable = true)
+ |-- MaMonNgoaiNgu: string (nullable = true)
+ |-- TongDiem: double (nullable = true)
+ |-- KhoiA: double (nullable = true)
+ |-- KhoiA1: double (nullable = true)
+ |-- KhoiB: double (nullable = true)
+ |-- KhoiC: double (nullable = true)
+ |-- KhoiD: double (nullable = true)
+ |-- KHTN: double (nullable = true)
+ |-- KHXH: double (nullable = true)
+ |-- KhoiA02: double (nullable = true)
+ |-- KhoiC01: double (nullable = true)
+ |-- KhoiD07: double (nullable = true)
+ |-- TongDiemKHTN: double (nullable = true)
+ |-- TongDiemKHXH: double (nullable = true)
+ |-- A00: double (nullable = true)
+ |-- A01: double (nullable = true)
+ |-- B00: double (nullable = true)
+ |-- C00: double (nullable = true)
+ |-- D01: double (nullable = true)
+ |-- Nam: integer (nullable = true)
+
+SILVER_READBACK_SCHEMA_END
+SILVER_READBACK_TOTAL_ROWS=256769
+SILVER_READBACK_BY_YEAR
++----+-----+
+|Nam |count|
++----+-----+
+|2022|84596|
+|2023|84851|
+|2024|87322|
++----+-----+
+
+SILVER_READBACK_TINH
++----+------+
+|Tinh|count |
++----+------+
+|2   |256769|
++----+------+
+
+SILVER_READBACK_VALID_A00_ROWS=141975
+SILVER_READBACK_VALID_A01_ROWS=130952
+SILVER_READBACK_VALID_B00_ROWS=142628
+SILVER_READBACK_VALID_C00_ROWS=109104
+SILVER_READBACK_VALID_D01_ROWS=216349
+A00_NULL_RULE_VIOLATIONS=0
+A01_NULL_RULE_VIOLATIONS=0
+B00_NULL_RULE_VIOLATIONS=0
+C00_NULL_RULE_VIOLATIONS=0
+D01_NULL_RULE_VIOLATIONS=0

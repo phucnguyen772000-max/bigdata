@@ -1,0 +1,69 @@
+26/10/07 10:56:09 INFO SparkContext: Running Spark version 3.5.9
+26/10/07 10:56:09 INFO SparkContext: OS info Linux, 6.18.33.2-microsoft-standard-WSL2, amd64
+26/10/07 10:56:09 INFO SparkContext: Java version 17.0.19
+26/10/07 10:56:09 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+26/10/07 10:56:09 INFO ResourceUtils: ==============================================================
+26/10/07 10:56:09 INFO ResourceUtils: No custom resources configured for spark.driver.
+26/10/07 10:56:09 INFO ResourceUtils: ==============================================================
+26/10/07 10:56:09 INFO SparkContext: Submitted application: DeltaLakeAdmissionScenarioDemo
+26/10/07 10:56:09 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+26/10/07 10:56:09 INFO ResourceProfile: Limiting resource is cpu
+26/10/07 10:56:09 INFO ResourceProfileManager: Added ResourceProfile id: 0
+26/10/07 10:56:09 INFO SecurityManager: Changing view acls to: spark
+26/10/07 10:56:09 INFO SecurityManager: Changing modify acls to: spark
+26/10/07 10:56:09 INFO SecurityManager: Changing view acls groups to: 
+26/10/07 10:56:09 INFO SecurityManager: Changing modify acls groups to: 
+26/10/07 10:56:09 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: spark; groups with view permissions: EMPTY; users with modify permissions: spark; groups with modify permissions: EMPTY
+26/10/07 10:56:09 INFO Utils: Successfully started service 'sparkDriver' on port 45319.
+26/10/07 10:56:09 INFO SparkEnv: Registering MapOutputTracker
+26/10/07 10:56:09 INFO SparkEnv: Registering BlockManagerMaster
+26/10/07 10:56:09 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+26/10/07 10:56:09 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+26/10/07 10:56:09 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+26/10/07 10:56:09 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-7b330fc6-d647-42f9-ab68-2606748e144e
+26/10/07 10:56:09 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+26/10/07 10:56:09 INFO SparkEnv: Registering OutputCommitCoordinator
+26/10/07 10:56:10 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+26/10/07 10:56:10 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+26/10/07 10:56:10 INFO StandaloneAppClient$ClientEndpoint: Connecting to master spark://spark-master:7077...
+26/10/07 10:56:10 INFO TransportClientFactory: Successfully created connection to spark-master/172.18.0.2:7077 after 52 ms (0 ms spent in bootstraps)
+26/10/07 10:56:10 INFO StandaloneSchedulerBackend: Connected to Spark cluster with app ID app-20261007105610-0001
+26/10/07 10:56:10 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20261007105610-0001/0 on worker-20261007105414-172.18.0.4-46255 (172.18.0.4:46255) with 2 core(s)
+26/10/07 10:56:10 INFO StandaloneSchedulerBackend: Granted executor ID app-20261007105610-0001/0 on hostPort 172.18.0.4:46255 with 2 core(s), 1024.0 MiB RAM
+26/10/07 10:56:10 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20261007105610-0001/1 on worker-20261007105415-172.18.0.5-40991 (172.18.0.5:40991) with 2 core(s)
+26/10/07 10:56:10 INFO StandaloneSchedulerBackend: Granted executor ID app-20261007105610-0001/1 on hostPort 172.18.0.5:40991 with 2 core(s), 1024.0 MiB RAM
+26/10/07 10:56:10 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 36333.
+26/10/07 10:56:10 INFO NettyBlockTransferService: Server created on spark-client 0.0.0.0:36333
+26/10/07 10:56:10 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+26/10/07 10:56:10 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, spark-client, 36333, None)
+26/10/07 10:56:10 INFO BlockManagerMasterEndpoint: Registering block manager spark-client:36333 with 434.4 MiB RAM, BlockManagerId(driver, spark-client, 36333, None)
+26/10/07 10:56:10 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20261007105610-0001/0 is now RUNNING
+26/10/07 10:56:10 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20261007105610-0001/1 is now RUNNING
+26/10/07 10:56:10 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, spark-client, 36333, None)
+26/10/07 10:56:10 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, spark-client, 36333, None)
+26/10/07 10:56:10 INFO StandaloneSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+26/10/07 10:56:19 WARN SparkStringUtils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+DELTA_VERSION=3.3.2
+TABLE_PATH=hdfs://namenode:9000/lakehouse/diemthi_hcm/delta/admission_scenarios
+INITIAL_VERSION=0
+LATEST_VERSION_BEFORE_OPTIMIZE=1
+COUNT_BEFORE_MERGE=1
+COUNT_AFTER_MERGE=2
+SC001_UPDATED=true
+SC002_INSERTED=true
+RESUMED_AFTER_LOG_PERMISSION_FAILURE=true
+ROWS:
+{'scenario_id': 'SC001', 'Nam': 2024, 'ToHop': 'A00', 'NguongDiem': 26.0, 'TenKichBan': 'A00 2024 cap nhat', 'CreatedAt': datetime.datetime(2026, 10, 7, 10, 54, 34, 16135), 'UpdatedAt': datetime.datetime(2026, 10, 7, 10, 54, 57, 690515)}
+{'scenario_id': 'SC002', 'Nam': 2024, 'ToHop': 'A01', 'NguongDiem': 24.0, 'TenKichBan': 'A01 2024', 'CreatedAt': datetime.datetime(2026, 10, 7, 10, 54, 57, 690515), 'UpdatedAt': datetime.datetime(2026, 10, 7, 10, 54, 57, 690515)}
+DELTA_DEMO_SUCCESS=true
+TABLE_PATH=hdfs://namenode:9000/lakehouse/diemthi_hcm/delta/admission_scenarios
+OLD_VERSION=0
+OLD_SC001_NGUONGDIEM=24.0
+OLD_SC001_TENKICHBAN=A00 2024
+LATEST_VERSION_BEFORE_OPTIMIZE=1
+LATEST_SC001_NGUONGDIEM=26.0
+LATEST_SC001_TENKICHBAN=A00 2024 cap nhat
+TIME_TRAVEL_DIFFERENT=true
+OPTIMIZE_BEFORE {'numFiles': 1, 'sizeInBytes': 2079, 'averageFileSize': 2079.0}
+OPTIMIZE_AFTER {'numFiles': 1, 'sizeInBytes': 2079, 'averageFileSize': 2079.0}
+DELTA_DEMO_COMPLETE

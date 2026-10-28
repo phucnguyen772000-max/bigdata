@@ -1,0 +1,38 @@
+KAFKA + AIRFLOW VALIDATION
+Date: 2026-10-14
+
+Kafka
+- Broker: kafka:9092 (Apache Kafka 3.9.1, KRaft)
+- Topic: diemthi_realtime
+- Partition count: 1
+- Topic replication factor: 1
+- Producer test: offsets 0, 1, 2 valid; offset 3 intentionally invalid
+- Consumer test: read offsets 0, 1, 2 with JSON keys successfully
+
+Spark Structured Streaming
+- Spark: 3.5.9 / Scala 2.12
+- Valid output: hdfs://namenode:9000/lakehouse/diemthi_hcm/streaming/bronze
+- Quarantine: hdfs://namenode:9000/lakehouse/diemthi_hcm/streaming/quarantine
+- Checkpoint: hdfs://namenode:9000/lakehouse/diemthi_hcm/checkpoints/diemthi_realtime
+- Valid rows after test: 3
+- Quarantine rows after test: 1
+- Invalid reason verified: score_out_of_range for Toan=11.0
+
+Airflow
+- Version: 2.10.5 / Python 3.10
+- Executor: LocalExecutor
+- Metadata DB: PostgreSQL 16
+- Web: http://localhost:8088
+- DAG: diemthi_bigdata_pipeline
+- Validation run: codex_validation_20261014
+- Final run state: success
+- All 8 tasks: success
+- Retry verified: verify_model retried after detection of Python 3.11/3.10 mismatch;
+  Airflow was rebuilt on Python 3.10 and the retry completed successfully.
+
+Final health
+- HDFS: HEALTHY; 2 live DataNodes; missing/corrupt/under-replicated blocks = 0
+- Spark: 2 alive workers
+- Kafka: healthy
+- Airflow Web/Scheduler/PostgreSQL: healthy
+- Streamlit dashboard: healthy

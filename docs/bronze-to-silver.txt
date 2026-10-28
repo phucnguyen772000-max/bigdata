@@ -1,0 +1,111 @@
+26/09/23 11:36:29 INFO SparkContext: Running Spark version 3.5.9
+26/09/23 11:36:29 INFO SparkContext: OS info Linux, 6.18.33.2-microsoft-standard-WSL2, amd64
+26/09/23 11:36:29 INFO SparkContext: Java version 17.0.19
+26/09/23 11:36:29 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+26/09/23 11:36:29 INFO ResourceUtils: ==============================================================
+26/09/23 11:36:29 INFO ResourceUtils: No custom resources configured for spark.driver.
+26/09/23 11:36:29 INFO ResourceUtils: ==============================================================
+26/09/23 11:36:29 INFO SparkContext: Submitted application: BigDataDiemThi-BronzeToSilver
+26/09/23 11:36:29 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+26/09/23 11:36:29 INFO ResourceProfile: Limiting resource is cpu
+26/09/23 11:36:29 INFO ResourceProfileManager: Added ResourceProfile id: 0
+26/09/23 11:36:29 INFO SecurityManager: Changing view acls to: spark
+26/09/23 11:36:29 INFO SecurityManager: Changing modify acls to: spark
+26/09/23 11:36:29 INFO SecurityManager: Changing view acls groups to: 
+26/09/23 11:36:29 INFO SecurityManager: Changing modify acls groups to: 
+26/09/23 11:36:29 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: spark; groups with view permissions: EMPTY; users with modify permissions: spark; groups with modify permissions: EMPTY
+26/09/23 11:36:30 INFO Utils: Successfully started service 'sparkDriver' on port 37159.
+26/09/23 11:36:30 INFO SparkEnv: Registering MapOutputTracker
+26/09/23 11:36:30 INFO SparkEnv: Registering BlockManagerMaster
+26/09/23 11:36:30 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+26/09/23 11:36:30 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+26/09/23 11:36:30 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+26/09/23 11:36:30 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-a06683b8-058b-481a-a674-b69d26a209d5
+26/09/23 11:36:30 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+26/09/23 11:36:30 INFO SparkEnv: Registering OutputCommitCoordinator
+26/09/23 11:36:30 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+26/09/23 11:36:30 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+26/09/23 11:36:31 INFO StandaloneAppClient$ClientEndpoint: Connecting to master spark://spark-master:7077...
+26/09/23 11:36:31 INFO TransportClientFactory: Successfully created connection to spark-master/172.18.0.5:7077 after 36 ms (0 ms spent in bootstraps)
+26/09/23 11:36:31 INFO StandaloneSchedulerBackend: Connected to Spark cluster with app ID app-20260923113631-0003
+26/09/23 11:36:31 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20260923113631-0003/0 on worker-20260923110412-172.18.0.7-36751 (172.18.0.7:36751) with 2 core(s)
+26/09/23 11:36:31 INFO StandaloneSchedulerBackend: Granted executor ID app-20260923113631-0003/0 on hostPort 172.18.0.7:36751 with 2 core(s), 1024.0 MiB RAM
+26/09/23 11:36:31 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 34095.
+26/09/23 11:36:31 INFO NettyBlockTransferService: Server created on spark-client 0.0.0.0:34095
+26/09/23 11:36:31 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20260923113631-0003/1 on worker-20260923110411-172.18.0.6-39255 (172.18.0.6:39255) with 2 core(s)
+26/09/23 11:36:31 INFO StandaloneSchedulerBackend: Granted executor ID app-20260923113631-0003/1 on hostPort 172.18.0.6:39255 with 2 core(s), 1024.0 MiB RAM
+26/09/23 11:36:31 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+26/09/23 11:36:31 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, spark-client, 34095, None)
+26/09/23 11:36:31 INFO BlockManagerMasterEndpoint: Registering block manager spark-client:34095 with 434.4 MiB RAM, BlockManagerId(driver, spark-client, 34095, None)
+26/09/23 11:36:31 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, spark-client, 34095, None)
+26/09/23 11:36:31 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, spark-client, 34095, None)
+26/09/23 11:36:31 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20260923113631-0003/1 is now RUNNING
+26/09/23 11:36:31 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20260923113631-0003/0 is now RUNNING
+26/09/23 11:36:31 INFO StandaloneSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+BRONZE_YEAR_2022_ROWS=995441
+BRONZE_YEAR_2022_COLUMN_COUNT=27
+BRONZE_YEAR_2023_ROWS=1022060
+BRONZE_YEAR_2023_COLUMN_COUNT=27
+BRONZE_YEAR_2024_ROWS=1061605
+BRONZE_YEAR_2024_COLUMN_COUNT=27
+26/09/23 11:37:06 WARN SparkStringUtils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+DQ_SUMMARY_BEGIN
+TOTAL_BRONZE_ROWS=3079106
+BRONZE_YEAR_2022_ROWS=995441
+BRONZE_YEAR_2023_ROWS=1022060
+BRONZE_YEAR_2024_ROWS=1061605
+MISSING_SBD_ROWS=0
+DUPLICATE_RECORD_ROWS=0
+DUPLICATE_KEYS=0
+INVALID_SCORE_ROWS=0
+INVALID_SOURCE_YEAR_ROWS=0
+INVALID_NUMERIC_ROWS=0
+INVALID_TINH_ROWS=0
+TINH_SBD_MISMATCH_ROWS=0
+QUARANTINE_ROWS=0
+HCM_YEAR_2022_ROWS=84596
+HCM_YEAR_2023_ROWS=84851
+HCM_YEAR_2024_ROWS=87322
+SILVER_TOTAL_ROWS=256769
+VALID_A00_ROWS=141975
+VALID_A01_ROWS=130952
+VALID_B00_ROWS=142628
+VALID_C00_ROWS=109104
+VALID_D01_ROWS=216349
+DQ_SUMMARY_END
+SILVER_SCHEMA_BEGIN
+root
+ |-- SBD: string (nullable = true)
+ |-- Nam: integer (nullable = false)
+ |-- Tinh: integer (nullable = true)
+ |-- SBD_New: long (nullable = true)
+ |-- Toan: double (nullable = true)
+ |-- NguVan: double (nullable = true)
+ |-- VatLy: double (nullable = true)
+ |-- HoaHoc: double (nullable = true)
+ |-- SinhHoc: double (nullable = true)
+ |-- LichSu: double (nullable = true)
+ |-- DiaLy: double (nullable = true)
+ |-- GDCD: double (nullable = true)
+ |-- NgoaiNgu: double (nullable = true)
+ |-- MaMonNgoaiNgu: string (nullable = true)
+ |-- TongDiem: double (nullable = true)
+ |-- KhoiA: double (nullable = true)
+ |-- KhoiA1: double (nullable = true)
+ |-- KhoiB: double (nullable = true)
+ |-- KhoiC: double (nullable = true)
+ |-- KhoiD: double (nullable = true)
+ |-- KHTN: double (nullable = true)
+ |-- KHXH: double (nullable = true)
+ |-- KhoiA02: double (nullable = true)
+ |-- KhoiC01: double (nullable = true)
+ |-- KhoiD07: double (nullable = true)
+ |-- TongDiemKHTN: double (nullable = true)
+ |-- TongDiemKHXH: double (nullable = true)
+ |-- A00: double (nullable = true)
+ |-- A01: double (nullable = true)
+ |-- B00: double (nullable = true)
+ |-- C00: double (nullable = true)
+ |-- D01: double (nullable = true)
+
+SILVER_SCHEMA_END

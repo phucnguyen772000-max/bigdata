@@ -1,0 +1,507 @@
+26/09/23 11:31:46 INFO SparkContext: Running Spark version 3.5.9
+26/09/23 11:31:46 INFO SparkContext: OS info Linux, 6.18.33.2-microsoft-standard-WSL2, amd64
+26/09/23 11:31:46 INFO SparkContext: Java version 17.0.19
+26/09/23 11:31:46 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+26/09/23 11:31:46 INFO ResourceUtils: ==============================================================
+26/09/23 11:31:46 INFO ResourceUtils: No custom resources configured for spark.driver.
+26/09/23 11:31:46 INFO ResourceUtils: ==============================================================
+26/09/23 11:31:46 INFO SparkContext: Submitted application: BigDataDiemThi-BronzeProfile
+26/09/23 11:31:46 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+26/09/23 11:31:46 INFO ResourceProfile: Limiting resource is cpu
+26/09/23 11:31:46 INFO ResourceProfileManager: Added ResourceProfile id: 0
+26/09/23 11:31:46 INFO SecurityManager: Changing view acls to: spark
+26/09/23 11:31:46 INFO SecurityManager: Changing modify acls to: spark
+26/09/23 11:31:46 INFO SecurityManager: Changing view acls groups to: 
+26/09/23 11:31:46 INFO SecurityManager: Changing modify acls groups to: 
+26/09/23 11:31:46 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: spark; groups with view permissions: EMPTY; users with modify permissions: spark; groups with modify permissions: EMPTY
+26/09/23 11:31:46 INFO Utils: Successfully started service 'sparkDriver' on port 39763.
+26/09/23 11:31:46 INFO SparkEnv: Registering MapOutputTracker
+26/09/23 11:31:46 INFO SparkEnv: Registering BlockManagerMaster
+26/09/23 11:31:46 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+26/09/23 11:31:46 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+26/09/23 11:31:46 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+26/09/23 11:31:46 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-4e234c9d-7dbf-4b18-90a2-d6d3fc858c4a
+26/09/23 11:31:46 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+26/09/23 11:31:46 INFO SparkEnv: Registering OutputCommitCoordinator
+26/09/23 11:31:47 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+26/09/23 11:31:47 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+26/09/23 11:31:47 INFO StandaloneAppClient$ClientEndpoint: Connecting to master spark://spark-master:7077...
+26/09/23 11:31:47 INFO TransportClientFactory: Successfully created connection to spark-master/172.18.0.5:7077 after 24 ms (0 ms spent in bootstraps)
+26/09/23 11:31:47 INFO StandaloneSchedulerBackend: Connected to Spark cluster with app ID app-20260923113147-0002
+26/09/23 11:31:47 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 38739.
+26/09/23 11:31:47 INFO NettyBlockTransferService: Server created on spark-client 0.0.0.0:38739
+26/09/23 11:31:47 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+26/09/23 11:31:47 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, spark-client, 38739, None)
+26/09/23 11:31:47 INFO BlockManagerMasterEndpoint: Registering block manager spark-client:38739 with 434.4 MiB RAM, BlockManagerId(driver, spark-client, 38739, None)
+26/09/23 11:31:47 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, spark-client, 38739, None)
+26/09/23 11:31:47 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, spark-client, 38739, None)
+26/09/23 11:31:47 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20260923113147-0002/0 on worker-20260923110412-172.18.0.7-36751 (172.18.0.7:36751) with 2 core(s)
+26/09/23 11:31:47 INFO StandaloneSchedulerBackend: Granted executor ID app-20260923113147-0002/0 on hostPort 172.18.0.7:36751 with 2 core(s), 1024.0 MiB RAM
+26/09/23 11:31:47 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20260923113147-0002/1 on worker-20260923110411-172.18.0.6-39255 (172.18.0.6:39255) with 2 core(s)
+26/09/23 11:31:47 INFO StandaloneSchedulerBackend: Granted executor ID app-20260923113147-0002/1 on hostPort 172.18.0.6:39255 with 2 core(s), 1024.0 MiB RAM
+26/09/23 11:31:47 INFO StandaloneSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+YEAR=2022
+RAW_COLUMN_COUNT=27
+RAW_COLUMNS='SBD'|'Nam'|'Tinh'|'SBD_New'|'Toan'|'NguVan'|'VatLy'|'HoaHoc'|'SinhHoc'|'LichSu'|'DiaLy'|'GDCD'|'NgoaiNgu'|'MaMonNgoaiNgu'|'TongDiem'|'KhoiA'|'KhoiA1'|'KhoiB'|'KhoiC'|'KhoiD'|'KHTN'|'KHXH'|'KhoiA02'|'KhoiC01'|'KhoiD07'|'TongDiemKHTN'|'TongDiemKHXH'
+NORMALIZED_COLUMNS=SBD|Nam|Tinh|SBD_New|Toan|NguVan|VatLy|HoaHoc|SinhHoc|LichSu|DiaLy|GDCD|NgoaiNgu|MaMonNgoaiNgu|TongDiem|KhoiA|KhoiA1|KhoiB|KhoiC|KhoiD|KHTN|KHXH|KhoiA02|KhoiC01|KhoiD07|TongDiemKHTN|TongDiemKHXH
+ROW_COUNT=995441
+TINH_DISTRIBUTION
++----+-----+
+|Tinh|count|
++----+-----+
+|1   |96942|
+|2   |84596|
+|3   |22399|
+|4   |12575|
+|5   |5863 |
+|6   |5043 |
+|7   |3662 |
+|8   |7204 |
+|9   |8425 |
+|10  |9608 |
+|11  |3053 |
+|12  |15083|
+|13  |8048 |
+|14  |11325|
+|15  |15808|
+|16  |13873|
+|17  |15624|
+|18  |20553|
+|19  |15850|
+|21  |20422|
+|22  |13885|
+|23  |9575 |
+|24  |9183 |
+|25  |19769|
+|26  |20145|
+|27  |10501|
+|28  |37466|
+|29  |36564|
+|30  |17304|
+|31  |11115|
+|32  |8643 |
+|33  |13296|
+|34  |16739|
+|35  |13295|
+|36  |4730 |
+|37  |18489|
+|38  |14075|
+|39  |10874|
+|40  |20348|
+|41  |14025|
+|42  |14102|
+|43  |10702|
+|44  |12797|
+|45  |5875 |
+|46  |9763 |
+|47  |12727|
+|48  |31363|
+|49  |15321|
+|50  |15038|
+|51  |18574|
+|52  |12661|
+|53  |15028|
+|54  |14325|
+|55  |12195|
+|56  |12301|
+|57  |10327|
+|58  |9461 |
+|59  |9985 |
+|60  |6413 |
+|61  |10692|
+|62  |6413 |
+|63  |6852 |
+|64  |6549 |
++----+-----+
+
+TINH_PREFIX_CONSISTENCY
++----+----------+-----+
+|Tinh|SBD_PREFIX|count|
++----+----------+-----+
+|1   |01        |96942|
+|2   |02        |84596|
+|3   |03        |22399|
+|4   |04        |12575|
+|5   |05        |5863 |
+|6   |06        |5043 |
+|7   |07        |3662 |
+|8   |08        |7204 |
+|9   |09        |8425 |
+|10  |10        |9608 |
+|11  |11        |3053 |
+|12  |12        |15083|
+|13  |13        |8048 |
+|14  |14        |11325|
+|15  |15        |15808|
+|16  |16        |13873|
+|17  |17        |15624|
+|18  |18        |20553|
+|19  |19        |15850|
+|21  |21        |20422|
+|22  |22        |13885|
+|23  |23        |9575 |
+|24  |24        |9183 |
+|25  |25        |19769|
+|26  |26        |20145|
+|27  |27        |10501|
+|28  |28        |37466|
+|29  |29        |36564|
+|30  |30        |17304|
+|31  |31        |11115|
+|32  |32        |8643 |
+|33  |33        |13296|
+|34  |34        |16739|
+|35  |35        |13295|
+|36  |36        |4730 |
+|37  |37        |18489|
+|38  |38        |14075|
+|39  |39        |10874|
+|40  |40        |20348|
+|41  |41        |14025|
+|42  |42        |14102|
+|43  |43        |10702|
+|44  |44        |12797|
+|45  |45        |5875 |
+|46  |46        |9763 |
+|47  |47        |12727|
+|48  |48        |31363|
+|49  |49        |15321|
+|50  |50        |15038|
+|51  |51        |18574|
+|52  |52        |12661|
+|53  |53        |15028|
+|54  |54        |14325|
+|55  |55        |12195|
+|56  |56        |12301|
+|57  |57        |10327|
+|58  |58        |9461 |
+|59  |59        |9985 |
+|60  |60        |6413 |
+|61  |61        |10692|
+|62  |62        |6413 |
+|63  |63        |6852 |
+|64  |64        |6549 |
++----+----------+-----+
+
+TINH_2_SAMPLE
++--------+---+----+
+|SBD     |Nam|Tinh|
++--------+---+----+
+|02000001|22 |2   |
+|02000002|22 |2   |
+|02000003|22 |2   |
+|02000004|22 |2   |
+|02000005|22 |2   |
++--------+---+----+
+only showing top 5 rows
+
+YEAR=2023
+RAW_COLUMN_COUNT=27
+RAW_COLUMNS='SBD'|'Nam'|'Tinh'|'SBD_New'|'Toan'|'NguVan'|'VatLy'|'HoaHoc'|'SinhHoc'|'LichSu'|'DiaLy'|'GDCD'|'NgoaiNgu'|'MaMonNgoaiNgu'|'TongDiem'|'KhoiA'|'KhoiA1'|'KhoiB'|'KhoiC'|'KhoiD'|'KHTN'|'KHXH'|'KhoiA02'|'KhoiC01'|'KhoiD07'|'TongDiemKHTN'|'TongDiemKHXH'
+NORMALIZED_COLUMNS=SBD|Nam|Tinh|SBD_New|Toan|NguVan|VatLy|HoaHoc|SinhHoc|LichSu|DiaLy|GDCD|NgoaiNgu|MaMonNgoaiNgu|TongDiem|KhoiA|KhoiA1|KhoiB|KhoiC|KhoiD|KHTN|KHXH|KhoiA02|KhoiC01|KhoiD07|TongDiemKHTN|TongDiemKHXH
+ROW_COUNT=1022060
+TINH_DISTRIBUTION
++----+------+
+|Tinh|count |
++----+------+
+|1   |102095|
+|2   |84851 |
+|3   |22723 |
+|4   |13133 |
+|5   |6286  |
+|6   |5046  |
+|7   |3838  |
+|8   |7866  |
+|9   |8392  |
+|10  |9353  |
+|11  |2917  |
+|12  |16153 |
+|13  |8235  |
+|14  |11773 |
+|15  |15874 |
+|16  |14042 |
+|17  |16025 |
+|18  |21080 |
+|19  |16724 |
+|21  |21934 |
+|22  |15386 |
+|23  |9690  |
+|24  |9635  |
+|25  |20405 |
+|26  |20845 |
+|27  |11149 |
+|28  |36480 |
+|29  |36886 |
+|30  |17249 |
+|31  |11168 |
+|32  |8413  |
+|33  |13029 |
+|34  |17197 |
+|35  |13870 |
+|36  |5028  |
+|37  |18897 |
+|38  |14861 |
+|39  |10666 |
+|40  |21042 |
+|41  |14487 |
+|42  |14687 |
+|43  |10930 |
+|44  |14218 |
+|45  |6121  |
+|46  |10229 |
+|47  |12900 |
+|48  |33158 |
+|49  |15653 |
+|50  |15678 |
+|51  |19942 |
+|52  |12925 |
+|53  |15455 |
+|54  |14423 |
+|55  |12061 |
+|56  |12117 |
+|57  |10435 |
+|58  |9196  |
+|59  |10045 |
+|60  |6382  |
+|61  |9776  |
+|62  |6685  |
+|63  |7384  |
+|64  |6937  |
++----+------+
+
+TINH_PREFIX_CONSISTENCY
++----+----------+------+
+|Tinh|SBD_PREFIX|count |
++----+----------+------+
+|1   |01        |102095|
+|2   |02        |84851 |
+|3   |03        |22723 |
+|4   |04        |13133 |
+|5   |05        |6286  |
+|6   |06        |5046  |
+|7   |07        |3838  |
+|8   |08        |7866  |
+|9   |09        |8392  |
+|10  |10        |9353  |
+|11  |11        |2917  |
+|12  |12        |16153 |
+|13  |13        |8235  |
+|14  |14        |11773 |
+|15  |15        |15874 |
+|16  |16        |14042 |
+|17  |17        |16025 |
+|18  |18        |21080 |
+|19  |19        |16724 |
+|21  |21        |21934 |
+|22  |22        |15386 |
+|23  |23        |9690  |
+|24  |24        |9635  |
+|25  |25        |20405 |
+|26  |26        |20845 |
+|27  |27        |11149 |
+|28  |28        |36480 |
+|29  |29        |36886 |
+|30  |30        |17249 |
+|31  |31        |11168 |
+|32  |32        |8413  |
+|33  |33        |13029 |
+|34  |34        |17197 |
+|35  |35        |13870 |
+|36  |36        |5028  |
+|37  |37        |18897 |
+|38  |38        |14861 |
+|39  |39        |10666 |
+|40  |40        |21042 |
+|41  |41        |14487 |
+|42  |42        |14687 |
+|43  |43        |10930 |
+|44  |44        |14218 |
+|45  |45        |6121  |
+|46  |46        |10229 |
+|47  |47        |12900 |
+|48  |48        |33158 |
+|49  |49        |15653 |
+|50  |50        |15678 |
+|51  |51        |19942 |
+|52  |52        |12925 |
+|53  |53        |15455 |
+|54  |54        |14423 |
+|55  |55        |12061 |
+|56  |56        |12117 |
+|57  |57        |10435 |
+|58  |58        |9196  |
+|59  |59        |10045 |
+|60  |60        |6382  |
+|61  |61        |9776  |
+|62  |62        |6685  |
+|63  |63        |7384  |
+|64  |64        |6937  |
++----+----------+------+
+
+TINH_2_SAMPLE
++--------+---+----+
+|SBD     |Nam|Tinh|
++--------+---+----+
+|02000001|23 |2   |
+|02000002|23 |2   |
+|02000003|23 |2   |
+|02000004|23 |2   |
+|02000005|23 |2   |
++--------+---+----+
+only showing top 5 rows
+
+YEAR=2024
+RAW_COLUMN_COUNT=27
+RAW_COLUMNS='SBD'|'Nam'|'Tinh'|'SBD_New'|'Toan'|'NguVan'|'VatLy'|'HoaHoc'|'SinhHoc'|'LichSu'|'DiaLy'|'GDCD'|'NgoaiNgu'|'MaMonNgoaiNgu'|'TongDiem'|'KhoiA'|'KhoiA1'|'KhoiB'|'KhoiC'|'KhoiD'|'KHTN'|'KHXH'|'KhoiA02'|'KhoiC01'|'KhoiD07'|'TongDiemKHTN'|'TongDiemKHXH'
+NORMALIZED_COLUMNS=SBD|Nam|Tinh|SBD_New|Toan|NguVan|VatLy|HoaHoc|SinhHoc|LichSu|DiaLy|GDCD|NgoaiNgu|MaMonNgoaiNgu|TongDiem|KhoiA|KhoiA1|KhoiB|KhoiC|KhoiD|KHTN|KHXH|KhoiA02|KhoiC01|KhoiD07|TongDiemKHTN|TongDiemKHXH
+ROW_COUNT=1061605
+TINH_DISTRIBUTION
++----+------+
+|Tinh|count |
++----+------+
+|1   |107867|
+|2   |87322 |
+|3   |25530 |
+|4   |13414 |
+|5   |6920  |
+|6   |5506  |
+|7   |4188  |
+|8   |8356  |
+|9   |8984  |
+|10  |9469  |
+|11  |3174  |
+|12  |16713 |
+|13  |8687  |
+|14  |12584 |
+|15  |16382 |
+|16  |15461 |
+|17  |17848 |
+|18  |21755 |
+|19  |17614 |
+|21  |23366 |
+|22  |16329 |
+|23  |9823  |
+|24  |9564  |
+|25  |21760 |
+|26  |22580 |
+|27  |11749 |
+|28  |38532 |
+|29  |36729 |
+|30  |17004 |
+|31  |11189 |
+|32  |8359  |
+|33  |12774 |
+|34  |17292 |
+|35  |14354 |
+|36  |5038  |
+|37  |19342 |
+|38  |15201 |
+|39  |10622 |
+|40  |20865 |
+|41  |14388 |
+|42  |15372 |
+|43  |11304 |
+|44  |15239 |
+|45  |6288  |
+|46  |10486 |
+|47  |13133 |
+|48  |33800 |
+|49  |15771 |
+|50  |16464 |
+|51  |20251 |
+|52  |12635 |
+|53  |16273 |
+|54  |15035 |
+|55  |12841 |
+|56  |12145 |
+|57  |10913 |
+|58  |9686  |
+|59  |10642 |
+|60  |6384  |
+|61  |10151 |
+|62  |7216  |
+|63  |7681  |
+|64  |7261  |
++----+------+
+
+TINH_PREFIX_CONSISTENCY
++----+----------+------+
+|Tinh|SBD_PREFIX|count |
++----+----------+------+
+|1   |01        |107867|
+|2   |02        |87322 |
+|3   |03        |25530 |
+|4   |04        |13414 |
+|5   |05        |6920  |
+|6   |06        |5506  |
+|7   |07        |4188  |
+|8   |08        |8356  |
+|9   |09        |8984  |
+|10  |10        |9469  |
+|11  |11        |3174  |
+|12  |12        |16713 |
+|13  |13        |8687  |
+|14  |14        |12584 |
+|15  |15        |16382 |
+|16  |16        |15461 |
+|17  |17        |17848 |
+|18  |18        |21755 |
+|19  |19        |17614 |
+|21  |21        |23366 |
+|22  |22        |16329 |
+|23  |23        |9823  |
+|24  |24        |9564  |
+|25  |25        |21760 |
+|26  |26        |22580 |
+|27  |27        |11749 |
+|28  |28        |38532 |
+|29  |29        |36729 |
+|30  |30        |17004 |
+|31  |31        |11189 |
+|32  |32        |8359  |
+|33  |33        |12774 |
+|34  |34        |17292 |
+|35  |35        |14354 |
+|36  |36        |5038  |
+|37  |37        |19342 |
+|38  |38        |15201 |
+|39  |39        |10622 |
+|40  |40        |20865 |
+|41  |41        |14388 |
+|42  |42        |15372 |
+|43  |43        |11304 |
+|44  |44        |15239 |
+|45  |45        |6288  |
+|46  |46        |10486 |
+|47  |47        |13133 |
+|48  |48        |33800 |
+|49  |49        |15771 |
+|50  |50        |16464 |
+|51  |51        |20251 |
+|52  |52        |12635 |
+|53  |53        |16273 |
+|54  |54        |15035 |
+|55  |55        |12841 |
+|56  |56        |12145 |
+|57  |57        |10913 |
+|58  |58        |9686  |
+|59  |59        |10642 |
+|60  |60        |6384  |
+|61  |61        |10151 |
+|62  |62        |7216  |
+|63  |63        |7681  |
+|64  |64        |7261  |
++----+----------+------+
+
+TINH_2_SAMPLE
++--------+---+----+
+|SBD     |Nam|Tinh|
++--------+---+----+
+|02000001|24 |2   |
+|02000002|24 |2   |
+|02000003|24 |2   |
+|02000004|24 |2   |
+|02000005|24 |2   |
++--------+---+----+
+only showing top 5 rows
+

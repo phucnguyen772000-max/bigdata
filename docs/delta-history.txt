@@ -1,0 +1,5 @@
+version	timestamp	operation	operationParameters
+0	2026-10-07 10:54:46.037000	WRITE	{'mode': 'ErrorIfExists', 'partitionBy': '[]'}
+1	2026-10-07 10:55:03.549000	MERGE	{'matchedPredicates': '[{"actionType":"update"}]', 'predicate': '["(scenario_id#788 = scenario_id#774)"]', 'notMatchedBySourcePredicates': '[]', 'notMatchedPredicates': '[{"actionType":"insert"}]'}
+2	2026-10-07 10:58:46.445000	MERGE	{'matchedPredicates': '[{"actionType":"update"}]', 'predicate': '["(scenario_id#466 = scenario_id#559)"]', 'notMatchedBySourcePredicates': '[]', 'notMatchedPredicates': '[{"actionType":"insert"}]'}
+3	2026-10-07 10:59:06.476000	MERGE	{'matchedPredicates': '[{"actionType":"update"}]', 'predicate': '["(scenario_id#2034 = scenario_id#2127)"]', 'notMatchedBySourcePredicates': '[]', 'notMatchedPredicates': '[{"actionType":"insert"}]'}

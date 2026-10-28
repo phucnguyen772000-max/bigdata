@@ -1,0 +1,92 @@
+26/10/07 09:52:03 INFO SparkContext: Running Spark version 3.5.9
+26/10/07 09:52:03 INFO SparkContext: OS info Linux, 6.18.33.2-microsoft-standard-WSL2, amd64
+26/10/07 09:52:03 INFO SparkContext: Java version 17.0.19
+26/10/07 09:52:03 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+26/10/07 09:52:03 INFO ResourceUtils: ==============================================================
+26/10/07 09:52:03 INFO ResourceUtils: No custom resources configured for spark.driver.
+26/10/07 09:52:03 INFO ResourceUtils: ==============================================================
+26/10/07 09:52:03 INFO SparkContext: Submitted application: BigDataDiemThi-KMeans-A00
+26/10/07 09:52:03 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+26/10/07 09:52:03 INFO ResourceProfile: Limiting resource is cpu
+26/10/07 09:52:03 INFO ResourceProfileManager: Added ResourceProfile id: 0
+26/10/07 09:52:03 INFO SecurityManager: Changing view acls to: spark
+26/10/07 09:52:03 INFO SecurityManager: Changing modify acls to: spark
+26/10/07 09:52:03 INFO SecurityManager: Changing view acls groups to: 
+26/10/07 09:52:03 INFO SecurityManager: Changing modify acls groups to: 
+26/10/07 09:52:03 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: spark; groups with view permissions: EMPTY; users with modify permissions: spark; groups with modify permissions: EMPTY
+26/10/07 09:52:03 INFO Utils: Successfully started service 'sparkDriver' on port 37419.
+26/10/07 09:52:04 INFO SparkEnv: Registering MapOutputTracker
+26/10/07 09:52:04 INFO SparkEnv: Registering BlockManagerMaster
+26/10/07 09:52:04 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+26/10/07 09:52:04 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+26/10/07 09:52:04 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+26/10/07 09:52:04 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-d9e31feb-6613-443a-9676-1794f2d3c574
+26/10/07 09:52:04 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+26/10/07 09:52:04 INFO SparkEnv: Registering OutputCommitCoordinator
+26/10/07 09:52:04 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+26/10/07 09:52:04 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+26/10/07 09:52:04 INFO StandaloneAppClient$ClientEndpoint: Connecting to master spark://spark-master:7077...
+26/10/07 09:52:04 INFO TransportClientFactory: Successfully created connection to spark-master/172.18.0.2:7077 after 33 ms (0 ms spent in bootstraps)
+26/10/07 09:52:04 INFO StandaloneSchedulerBackend: Connected to Spark cluster with app ID app-20261007095204-0000
+26/10/07 09:52:04 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 45847.
+26/10/07 09:52:04 INFO NettyBlockTransferService: Server created on spark-client 0.0.0.0:45847
+26/10/07 09:52:04 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+26/10/07 09:52:04 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, spark-client, 45847, None)
+26/10/07 09:52:04 INFO BlockManagerMasterEndpoint: Registering block manager spark-client:45847 with 434.4 MiB RAM, BlockManagerId(driver, spark-client, 45847, None)
+26/10/07 09:52:04 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, spark-client, 45847, None)
+26/10/07 09:52:04 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, spark-client, 45847, None)
+26/10/07 09:52:04 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20261007095204-0000/0 on worker-20261007095124-172.18.0.3-41609 (172.18.0.3:41609) with 2 core(s)
+26/10/07 09:52:04 INFO StandaloneSchedulerBackend: Granted executor ID app-20261007095204-0000/0 on hostPort 172.18.0.3:41609 with 2 core(s), 1024.0 MiB RAM
+26/10/07 09:52:04 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20261007095204-0000/1 on worker-20261007095124-172.18.0.4-40641 (172.18.0.4:40641) with 2 core(s)
+26/10/07 09:52:04 INFO StandaloneSchedulerBackend: Granted executor ID app-20261007095204-0000/1 on hostPort 172.18.0.4:40641 with 2 core(s), 1024.0 MiB RAM
+26/10/07 09:52:05 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20261007095204-0000/1 is now RUNNING
+26/10/07 09:52:05 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20261007095204-0000/0 is now RUNNING
+26/10/07 09:52:05 INFO StandaloneSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+KMEANS_A00_START
+SILVER_PATH=hdfs://namenode:9000/lakehouse/diemthi_hcm/silver
+SILVER_TOTAL_ROWS=256769
+A00_TRAINING_ROWS=141975
+ROWS_EXCLUDED_MISSING_A00_SUBJECTS=114794
+A00_TRAINING_ROWS_BY_YEAR
++----+-----+
+|Nam |count|
++----+-----+
+|2022|46496|
+|2023|46608|
+|2024|48871|
++----+-----+
+
+26/10/07 09:52:33 WARN InstanceBuilder: Failed to load implementation from:dev.ludovic.netlib.blas.VectorBLAS
+K=2 SILHOUETTE=0.549144
+K=3 SILHOUETTE=0.417383
+K=4 SILHOUETTE=0.435335
+K=5 SILHOUETTE=0.422038
+K=6 SILHOUETTE=0.411841
+BEST_K=2
+BEST_SILHOUETTE=0.549144
+PREDICTION_ROWS=141975
+CLUSTER_CENTERS_SCALED_BEGIN
+CLUSTER=0 CENTER_SCALED=[-0.825473, -0.807788, -0.766983]
+CLUSTER=1 CENTER_SCALED=[0.542479, 0.530856, 0.504040]
+CLUSTER_CENTERS_SCALED_END
+CLUSTER_CENTERS_ORIGINAL_SCALE_BEGIN
+CLUSTER=0 Toan=6.6632 VatLy=5.2055 HoaHoc=5.4662 A00_APPROX=17.3350
+CLUSTER=1 Toan=7.9617 VatLy=7.1545 HoaHoc=7.3122 A00_APPROX=22.4284
+CLUSTER_CENTERS_ORIGINAL_SCALE_END
+A00_CLUSTER_STATISTICS_BEGIN
++----+-------+---------+------+-------+--------+-------+
+|Nam |cluster|SoThiSinh|ToanTB|VatLyTB|HoaHocTB|A00TB  |
++----+-------+---------+------+-------+--------+-------+
+|2022|0      |17294    |6.6867|5.3515 |5.2948  |17.333 |
+|2022|1      |29202    |8.0374|7.1266 |7.3322  |22.4961|
+|2023|0      |18548    |6.6093|5.1919 |5.7344  |17.5356|
+|2023|1      |28060    |7.8702|7.0978 |7.3214  |22.2894|
+|2024|0      |20460    |6.6922|5.0945 |5.368   |17.1547|
+|2024|1      |28411    |7.9744|7.2392 |7.2825  |22.4961|
++----+-------+---------+------+-------+--------+-------+
+
+A00_CLUSTER_STATISTICS_END
+FEATURES_PATH=hdfs://namenode:9000/lakehouse/diemthi_hcm/features/a00_clusters
+MODEL_PATH=hdfs://namenode:9000/lakehouse/diemthi_hcm/models/kmeans_a00
+GOLD_STATS_PATH=hdfs://namenode:9000/lakehouse/diemthi_hcm/gold/a00_cluster_statistics
+KMEANS_A00_SUCCESS

@@ -1,0 +1,13 @@
+DELTA_VERSION=3.3.2
+TABLE_PATH=hdfs://namenode:9000/lakehouse/diemthi_hcm/delta/admission_scenarios
+INITIAL_VERSION=0
+LATEST_VERSION_BEFORE_OPTIMIZE=1
+COUNT_BEFORE_MERGE=1
+COUNT_AFTER_MERGE=2
+SC001_UPDATED=true
+SC002_INSERTED=true
+RESUMED_AFTER_LOG_PERMISSION_FAILURE=true
+ROWS:
+{'scenario_id': 'SC001', 'Nam': 2024, 'ToHop': 'A00', 'NguongDiem': 26.0, 'TenKichBan': 'A00 2024 cap nhat', 'CreatedAt': datetime.datetime(2026, 10, 7, 10, 54, 34, 16135), 'UpdatedAt': datetime.datetime(2026, 10, 7, 10, 54, 57, 690515)}
+{'scenario_id': 'SC002', 'Nam': 2024, 'ToHop': 'A01', 'NguongDiem': 24.0, 'TenKichBan': 'A01 2024', 'CreatedAt': datetime.datetime(2026, 10, 7, 10, 54, 57, 690515), 'UpdatedAt': datetime.datetime(2026, 10, 7, 10, 54, 57, 690515)}
+DELTA_DEMO_SUCCESS=true

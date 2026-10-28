@@ -1,0 +1,12 @@
+TABLE_PATH=hdfs://namenode:9000/lakehouse/diemthi_hcm/delta/admission_scenarios
+OLD_VERSION=0
+OLD_SC001_NGUONGDIEM=24.0
+OLD_SC001_TENKICHBAN=A00 2024
+LATEST_VERSION_BEFORE_OPTIMIZE=1
+LATEST_SC001_NGUONGDIEM=26.0
+LATEST_SC001_TENKICHBAN=A00 2024 cap nhat
+TIME_TRAVEL_DIFFERENT=true
+
+SQL_VERSION_AS_OF_0={'scenario_id': 'SC001', 'NguongDiem': 24.0, 'TenKichBan': 'A00 2024'}
+SQL_LATEST={'scenario_id': 'SC001', 'NguongDiem': 26.0, 'TenKichBan': 'A00 2024 cap nhat'}
+SQL_VERSION_AS_OF_PROOF=true

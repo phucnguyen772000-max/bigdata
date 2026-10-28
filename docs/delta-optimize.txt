@@ -1,0 +1,6 @@
+TABLE_PATH=hdfs://namenode:9000/lakehouse/diemthi_hcm/delta/admission_scenarios
+OPTIMIZE_SUPPORTED=true
+BEFORE={"numFiles": 1, "sizeInBytes": 2079, "averageFileSize": 2079.0}
+AFTER={"numFiles": 1, "sizeInBytes": 2079, "averageFileSize": 2079.0}
+OPTIMIZE_RESULT:
+{'path': 'hdfs://namenode:9000/lakehouse/diemthi_hcm/delta/admission_scenarios', 'metrics': {'numFilesAdded': 0, 'numFilesRemoved': 0, 'filesAdded': {'min': None, 'max': None, 'avg': 0.0, 'totalFiles': 0, 'totalSize': 0}, 'filesRemoved': {'min': None, 'max': None, 'avg': 0.0, 'totalFiles': 0, 'totalSize': 0}, 'partitionsOptimized': 0, 'zOrderStats': None, 'clusteringStats': None, 'numBins': 0, 'numBatches': 1, 'totalConsideredFiles': 1, 'totalFilesSkipped': 1, 'preserveInsertionOrder': False, 'numFilesSkippedToReduceWriteAmplification': 0, 'numBytesSkippedToReduceWriteAmplification': 0, 'startTimeMs': 1791370611771, 'endTimeMs': 0, 'totalClusterParallelism': 4, 'totalScheduledTasks': 0, 'autoCompactParallelismStats': None, 'deletionVectorStats': None, 'numTableColumns': 7, 'numTableColumnsWithStats': 7}}

@@ -1,0 +1,3 @@
+86.8 M  173.6 M  /lakehouse/diemthi_hcm/bronze/year=2022
+88.8 M  177.6 M  /lakehouse/diemthi_hcm/bronze/year=2023
+92.3 M  184.6 M  /lakehouse/diemthi_hcm/bronze/year=2024
